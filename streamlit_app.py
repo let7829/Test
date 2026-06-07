@@ -636,9 +636,6 @@ if (messages and isinstance(messages[-1], dict)
 
             if "78297829" in str(user_text):
                 system_prompt = DEVELOPER_GUIDE
-            else:
-                lang_rule = f"LANGUAGE RULE: You must strictly reply in {st.session_state.app_lang} at all times. Do not write in any other 
-                
                 }
             
             api_messages = [{"role": "system", "content": system_prompt}]
