@@ -636,7 +636,7 @@ if (messages and isinstance(messages[-1], dict)
 
             if "78297829" in str(user_text):
                 system_prompt = DEVELOPER_GUIDE
-                }
+                
             
             api_messages = [{"role": "system", "content": system_prompt}]
             for msg in messages[:-1]:
