@@ -607,12 +607,7 @@ if prompt := st.chat_input(st.session_state.placeholder_text):
         st.session_state.captured_image = None
         st.session_state.captured_mime = None
         st.session_state.last_upload_hash = None
-        st.session_state.last_camera_hash = None
-    else:
-        msg_content = prompt
-    st.session_state.all_chats[st.session_state.current_chat].append({"role": "user", "content": msg_content})
-    save_chats()
-    st.rerun()
+        st.session_state.last_camera_hash = None 
 
 if (messages and isinstance(messages[-1], dict)
         and messages[-1].get("role") == "user"
